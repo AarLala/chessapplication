@@ -43,9 +43,12 @@ const CHALLENGES = [
     description: "Anticipate the computer's next move",
     icon: "🔮",
     difficulty: "Advanced",
-    unlock: (challengePoints, _totalPoints) => (challengePoints["1"] >= 100 && challengePoints["2"] >= 100),
-    unlockMsg: "Unlock by scoring 100+ in both Memory Recall and Blurred Vision",
-  },
+    unlock: (challengePoints, _totalPoints) => (challengePoints["1"] >= 100 && challengePoints["2"] >= 75),
+    unlockMsg: (
+      <span className="font-bold text-black">
+        Unlock by scoring 100+ points in Memory Recall and 75+ points Blurred Vision
+      </span>
+    ),  },
   {
     id: 4,
     title: "Recall the Game",
@@ -53,8 +56,11 @@ const CHALLENGES = [
     icon: "📜",
     difficulty: "Advanced",
     unlock: (_challengePoints, totalPoints) => totalPoints >= 300,
-    unlockMsg: "Unlock by reaching 300 total points",
-  },
+    unlockMsg: (
+      <span className="font-bold text-black">
+        Unlock by scoring 300+ points in total
+      </span>
+    ),  },
   {
     id: 5,
     title: "Cognitive Switch",

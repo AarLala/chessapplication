@@ -7,7 +7,7 @@ const About = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
       
-      <main className="flex-1 container mx-auto px-4 py-8">
+      <main className="flex-1 container mx-auto px-4 py-8 text-black">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
             <h1 className="text-3xl font-bold mb-6">About KingsCouncil</h1>
@@ -34,7 +34,7 @@ const About = () => {
               </ul>
               <h2 className="text-xl font-semibold mt-8 mb-4">Contact Us</h2>
               <p>
-                Have questions or feedback? Email us at <a href="mailto:support@kinscouncil.com" className="text-chess-primary underline">support@kinscouncil.com</a>.
+                Have questions or feedback? Email us at <a href="mailto:aaravh.lala@gmail.com" className="text-chess-primary underline">aaravh.lala@gmail.com</a>.
               </p>
             </div>
           </div>

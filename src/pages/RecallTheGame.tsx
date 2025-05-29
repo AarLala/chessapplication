@@ -330,9 +330,12 @@ const RecallTheGame = () => {
               
               if (moveCount + 2 >= 6) {
                 setTimeout(() => {
-                  setRecallOpen(true);
+                  setTimeout(() => {
+                    setRecallOpen(true);
+                  }, 2000); // <-- Add extra 1 second pause AFTER AI move
                 }, 500);
               }
+              
             }
           }, 500);
         }
